@@ -1,0 +1,172 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* 確保header都會在最上面 */
+    transition: all 0.3s; /* 任何變化都要漸變 */
+}
+
+.header__colored{
+    background-color: #fefefe;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1)
+}
+
+.header__colored .menu-toggle span{
+    background-color: #6f587d;
+}
+
+.header__colored .navbar__social-bar .icon-btn{
+    color: #6f587d;
+}
+
+/* --------------
+ * navbar
+ * -------------- */
+.navbar{
+    /* height: 80px; */ /* 已經由padding和icon-btn撐開 */
+    /* border: 1px solid #fff; */
+}
+
+.navbar__social-bar{
+    padding: 24px;
+    /* border: 1px solid #fff; */
+    /* display: inline-block; */
+    float: left;
+}
+@media (max-width: 768px){
+    .navbar__social-bar{
+        padding: 12px;
+    }
+}
+
+.navbar__social-bar .icon-btn{
+    color: #fefefe;
+}
+
+/* --------------
+ * nav
+ * -------------- */
+
+.navbar__nav{
+    float: right;
+}
+
+.menu-toggle{
+    /* width: 80px; */ /* 寬高改由內容的padding去撐開 */
+    /* height: 80px; */
+    /* border: 1px solid #fff; */
+    display: block;
+    padding: 24px;
+    padding-top: 26px;
+}
+@media (max-width: 768px){
+    .menu-toggle{
+        padding: 12px;
+        padding-top: 14px;
+    }
+}
+
+.menu-toggle span{
+    display: block;
+    width: 32px;
+    height: 2px;
+    background-color: #fefefe;
+    margin-bottom: 8px;
+    transition: all 0.3s;
+}
+
+.menu-toggle:hover span:nth-child(1){
+    transform: translateX(-20%);
+}
+
+.menu-toggle:hover span:nth-child(3){
+    transform: translateX(20%);
+}
+/* --------------
+ * popup-menu
+ * -------------- */
+.popup-menu{
+    position: fixed; /* 佔滿全畫面, 對齊左上角 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 跳出來後寬高100% */
+    height: 100%;
+    background-color: #fefefe;
+    transition: all 0.3s; 
+    /* display: none; */ /* transition目前無法對display做設定,因此改用opacity */
+    opacity: 0; 
+    visibility: hidden; /* opacity: 0 等於有一塊透明的遮罩在上方, 因此menu-toggle無法點擊, 需讓遮罩的visibility: hidden */
+}
+
+.popup-menu:target{
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 關閉popup-menu */
+.popup-menu__close{
+    display: block; /* <a>,<span>,<img>都是display: inline */
+    width: 80px;
+    height: 80px;
+    padding: 24px;
+    /* border: 1px solid #484848; */
+    float: right;
+    transition: all 0.3s; /* transform是靜態的 要加transition才會旋轉 */
+}
+.popup-menu__close:hover{
+    transform: rotate(180deg);
+}
+.popup-menu__close span{ 
+    /* display: block; <a>,<span>,<img>都是display: inline */
+    width: 32px;
+    height: 2px;
+    background-color: #cd7ffd;
+    /* 讓X置中 */
+    position: absolute; /* position: absolute會繼承父層的display, 故display:block可以拿掉 */
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+}
+
+@media (max-width: 768px){
+    .popup-menu__close{
+        width: 56px;
+        height: 56px;
+        padding: 12px;
+        /* padding-top: 14px; */
+    }
+}
+
+.popup-menu__close span:nth-child(1){
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.popup-menu__close span:nth-child(2){
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.popup-menu__item{
+    display: block;
+    text-align: center;
+    font-family: 'Lora', Helvetica, sans-serif, arial, 'roboto';
+    font-size: 28px;
+    line-height: 56px;
+    color: #484848;
+}
+.popup-menu__item:hover{
+    color: #f574df;
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+    .popup-menu__item{
+        font-size: 24px;
+        line-height: 48px;
+    }
+}
+
+
+
+
+

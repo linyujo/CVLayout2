@@ -1,0 +1,431 @@
+/* --------------
+ * Normalize.css
+ * -------------- */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/* --------------
+ * Fonts Import
+ * -------------- */
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+/* --------------
+ * Personal Reset
+ * -------------- */
+ *{
+     position: relative;
+     box-sizing: border-box;
+ }
+
+/* --------------
+ * Color Theme
+ * -------------- */
+
+  /* background-color */
+ .bg-color-primary{background-color: #6487f5}
+ .bg-color-secondary{background-color: #ff628f}
+ .bg-color-black{background-color: #484848;}
+ .bg-color-grey{background-color: #cbcbcb;}
+ .bg-color-white{background-color: #fefefe;}
+ 
+ /* text color */
+ .color-primary{color: #6487f5;}
+ .color-secondary{color: #ff638f;}
+ .color-black{color: #484848;}
+ .color-grey{color: #cbcbcb;}
+ .color-white{color: #fefefe;}
+
+/* --------------
+ * Global
+ * -------------- */
+/* font-family */
+body, html{
+    font-family: Helvetica, sans-serif, arial, 'Lora';
+}
+
+/* heading */
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    color: #484848
+}
+
+h1{
+    font-size: 80px;
+    font-weight: 800;
+    font-family: Helvetica, sans-serif, arial, 'Lora';
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+h2{
+    font-size: 48px;
+    font-weight: 600;
+    font-family: Helvetica, sans-serif, arial, 'Lora';
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+h3{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Helvetica, sans-serif, arial, 'Lora';
+    margin-top: 24px;
+    margin-bottom: 24px;
+    line-height: 48px
+}
+
+h4{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Helvetica, sans-serif, arial, 'Lora';
+    margin-top: 24px;
+    margin-bottom: 24px;
+    line-height: 32px
+}
+
+h5{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Helvetica, sans-serif, arial, 'Lora';
+    margin-top: 24px;
+    margin-bottom: 16px;
+    line-height: 1;
+}
+
+h6{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Helvetica, sans-serif, arial, 'Lora';
+    margin-top: 24px;
+    margin-bottom: 16px;
+    line-height: 32px;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Helvetica, sans-serif, arial, 'Lora';
+    margin-top: 24px;
+    line-height: 32px;
+    letter-spacing: 0; /* p的文字間距預設是0 */
+}
+
+.subtitle{
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'Lora', Helvetica, sans-serif, arial;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+@media (max-width: 768px){
+    .subtitle{
+        font-size: 40px;
+    }
+}
+
+/* link anchor */
+a{
+    color: #484848;
+    text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus{
+    color: #484848;
+    text-decoration: none;
+}
+
+/* list ul li */
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* normal btn */
+.btn{
+    /* 基礎定位 */
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0; 
+    /* btn外觀 */
+    height: 36px;
+    line-height: 36px;
+    min-width: 64px;
+    padding: 0 16px; /* 上下的高度由padding去撐開 */
+    background-color: #d1d2d3;
+    border: 0;
+    border-radius: 18px;
+    outline: 0;
+    overflow: hidden;
+    /* btn文字 */ 
+    font-size: 14px;
+       /* font-weight: 500; */
+    text-align: center;
+    font-family: 'Lora', Helvetica, sans-serif, arial;
+    text-decoration: none;
+    letter-spacing: 0; 
+    /* 使用者互動 */
+    cursor: pointer;
+    user-select: none;
+    user-drag: none;
+    transition: all 0.3s;
+}
+
+.btn.btn-lg{
+    font-size: 20px;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 64px;
+    font-weight: 400;
+    border-radius: 28px;
+}
+.btn.btn-md{
+    font-size: 18px;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 64px;
+    font-weight: 400;
+    border-radius: 24px;
+}
+.btn.btn-sm{
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 32px;
+    font-weight: 400;
+    border-radius: 20px;
+}
+
+.btn-primary, .btn-secondary{
+    color: #b075ce;
+}
+
+.btn.btn-primary{
+    background-color: #fefefe;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:active{
+    background-color: #fbcde7;
+    color: #484848;
+}
+
+.btn.btn-secondary{
+    background-color: inherit; /* 繼承上一層的顏色,若上一層沒有就是透明的 */
+    border: 2px solid #fbcde7;
+}
+.btn.btn-secondary:hover,
+.btn.btn-secondary:active{
+    background-color: #fbcde7;
+    color: #fefefe;
+}
+
+/* icon btn */
+.icon-btn{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 24px;
+}
+
+.icon-btn .icon{
+    display: block;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.icon-btn .icon:hover{
+    transform: translateY(-50%);
+}
+
+/* text btn */
+.text-btn{
+    /* 定位 */
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    /* 字型 */
+    font-size: 14px;
+    font-weight: 400px;
+    font-family: 'Lora', Helvetica, sans-serif, arial;
+    color: #484848;
+    letter-spacing: 0;
+    text-decoration: none;
+    /* 使用者互動 */
+    cursor: pointer;
+}
+.text-btn.text-btn-primary{
+    color: #b075ce;
+}
+.text-btn.text-btn-lg{
+    font-size: 20px;
+    line-height: 48px;
+    height: 48px;
+    font-weight: 900;
+}
+.text-btn.text-btn-lg::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #b075ce;
+    width: 0%;
+    transition: all 0.3s;
+}
+.text-btn.text-btn-lg:hover::before{
+    width: 100%;
+}
+
+/* btn-group */
+.btn-group .btn{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.btn-group__center{
+    text-align: center;
+}
+
+/* --------------
+ * imgBox
+ * -------------- */
+.imageBox{
+    width: 100%;
+    overflow: hidden;
+    /* border: 1px solid #484848; */
+}
+.imageBox .imageBox__ratio{
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.imageBox__ratio.imageBox__ratio__3-4{
+    padding-top: calc(100% * 3 / 4);
+}
+
+.imageBox .imageBox__ratio .image{
+    /* 定位 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* 圖片 */
+    background-size: cover;
+    background-position: center;
+}
+
+/* --------------
+ * Icons
+ * -------------- */
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?76528912');
+    src: url('../font/fontello.eot?76528912#iefix') format('embedded-opentype'),
+         url('../font/fontello.woff2?76528912') format('woff2'),
+         url('../font/fontello.woff?76528912') format('woff'),
+         url('../font/fontello.ttf?76528912') format('truetype'),
+         url('../font/fontello.svg?76528912#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?76528912#fontello') format('svg');
+}
+}
+*/
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    /* margin-right: .2em; */
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    /* line-height: 1em; */
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    /* margin-left: .2em; */
+
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    /* customize icon color */
+}
+   
+.icon-mail:before { content: '\e800'; } /* '' */
+.icon-search:before { content: '\e801'; } /* '' */
+.icon-quote-right:before { content: '\e803'; } /* '' */
+.icon-quote-left:before { content: '\e804'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-dribbble:before { content: '\f17d'; } /* '' */
+.icon-behance:before { content: '\f1b4'; } /* '' */
+.icon-paper-plane:before { content: '\f1d8'; } /* '' */
+.icon-paper-plane-empty:before { content: '\f1d9'; } /* '' */
+.icon-facebook-official:before { content: '\f230'; } /* '' */
+.icon-facebook-squared:before { content: '\f308'; } /* '' */
+
+/* --------------
+ * Utils
+ * 通常utils的權重比較大, 會加上important
+ * -------------- */
+.u-push-right{ float: right !important; }
+.u-push-left{ float: left !important; }
+.u-text-center{ text-align: center !important; }
+.u-clearCollapse{
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+@media (max-width: 768px){
+    .u-sm-hidden{ display: none  !important; }
+}
+
+/* --------------
+ * 常用padding
+ * -------------- */
+.section-padding__80{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+@media (max-width: 768px){
+    .section-padding__80{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+ 
+
+
+
+
+

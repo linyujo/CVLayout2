@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>Raine's resume</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/elements.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/fancybox.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+	<div class="wrapper">
+		
+		<!-- Start bg -->
+		<div class="bg"></div>
+		<!-- End bg -->
+
+		<!-- Strat header -->
+		<header class="header" id="js-header">
+			<div class="container">
+				<div class="navbar u-clearfix u-clearCollapse">
+					<div class="social-bar navbar__social-bar">
+						<a href="#" class="icon-btn"><i class="icon icon-facebook-official"></i></a>
+						<a href="#" class="icon-btn"><i class="icon icon-dribbble"></i></a>
+						<a href="#" class="icon-btn"><i class="icon icon-behance"></i></a>
+					</div>
+					<div class="nav navbar__nav">
+						<a href="#popup-overlay" class="menu-toggle">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+						<div id="popup-overlay" class="popup-menu">
+							<div class="container"> <!-- 限制<a>float: right的位置 -->
+								<div class="u-clearfix u-clearCollapse"> <!-- 離開<a>之後清除float -->
+									<a href="#" class="popup-menu__close">
+										<span></span>
+										<span></span>
+									</a>
+								</div>
+								<ul>
+									<li><a href="#about" class="popup-menu__item">ABOUT</a></li>
+									<li><a href="#skill" class="popup-menu__item">SKILL</a></li>
+									<li><a href="#experience" class="popup-menu__item">EXPERIENCE</a></li>
+									<li><a href="#myWork" class="popup-menu__item">MY WORK</a></li>
+									<li><a href="#contact" class="popup-menu__item">CONTACT</a></li>
+								</ul>			
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- End header -->
+
+		<!-- Strat main -->
+		<section id="about" class="main">
+			<div class="heroine">
+				<img src="images/parallax_graphic/tri-blue.svg" class="graphic_001 u-sm-hidden" data-stellar-ratio="1.5" alt="">
+				<img src="images/parallax_graphic/cir-pink-sm.svg" class="graphic_002" data-stellar-ratio="1.5" alt="">
+				<div class="heroine_protrait"></div>
+				<div class="container">
+					<div class="heroine_content wow bounceInLeft">
+						<h1 class="heroine__header">HI <br>I'M RAINE</h1>
+						<a href="#" class="btn btn-primary btn-md">CONTACT</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="quote bg-color-white tilt-bg__top tilt-bg__moMargin">
+				<img src="images/parallax_graphic/tri-purple.svg" class="graphic_003 u-sm-hidden" data-stellar-ratio="1.5" alt="">
+				<img src="images/parallax_graphic/dot-blue.svg" class="graphic_004 u-sm-hidden" data-stellar-ratio="1.5" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-sm-push-3">
+							<div class="quote__content">
+								<div class="quote__icon">
+									<i class="icon-quote-right"></i>
+								</div>
+								<p class="quote__text">
+									將傑出人物和我們其他人區分開來的主要因素是：他們經過年復一年的練習，已經改變了大腦中的神經迴路，以創建高度專業化的心理表徵，這些心理表徵反過來使得令人難以置信的記憶、規律的識別、問題的解決等成為可能。
+								</p>
+								<div class="quote__name">
+									<!-- span: 讓顏色做一些不一樣的設定 -->
+									<span>Anders Ericsson - </span>
+									<span>《刻意練習》</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="skill" class="skill bg-color-white tilt-bg__bottom">
+				<img src="images/parallax_graphic/dot-grey.svg" class="graphic_005 u-sm-hidden" data-stellar-ratio="1.5" alt="">					
+				<img src="images/parallax_graphic/cir-pink-md.svg" class="graphic_006" data-stellar-ratio="1.5" alt="">
+				<div class="container">
+					<h2 class="subtitle u-text-center wow bounceInUp">SKILL</h2>
+					<div class="skill__content">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="skill-card wow bounceInUp">
+									<div class="skill-card__inner">
+										<h4 class="skill-card__title">HTML</h4>
+										<p class="skill-card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi consectetur rem sunt natus? Ipsam quis in laboriosam ea deleniti vitae. Veritatis alias ea quisquam nisi nobis! Magnam a quod odit?</p>
+									</div>
+									<div class="skill-card__icon">
+										<img class="image" src="./images/skill_icon/html-icon.png" alt=""/>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="skill-card wow bounceInUp" data-wow-delay="0.2s">
+									<div class="skill-card__inner">
+										<h4 class="skill-card__title">CSS</h4>
+										<p class="skill-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates delectus provident eveniet, nisi illum sed! Animi delectus, pariatur praesentium, eum quo tempora tempore mollitia deleniti quis error saepe numquam est!</p>
+									</div>
+									<div class="skill-card__icon">
+										<img class="image" src="./images/skill_icon/css-icon.png" alt=""/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="skill-card wow bounceInUp" data-wow-delay="0.4s">
+									<div class="skill-card__inner">
+										<h4 class="skill-card__title">JavaScript</h4>
+										<p class="skill-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates delectus provident eveniet, nisi illum sed! Animi delectus, pariatur praesentium, eum quo tempora tempore mollitia deleniti quis error saepe numquam est!</p>
+									</div>
+									<div class="skill-card__icon">
+										<img class="image" src="./images/skill_icon/javascript-icon.png" alt=""/>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="skill-card wow bounceInUp" data-wow-delay="0.6s">
+									<div class="skill-card__inner">
+										<h4 class="skill-card__title">NODEJS</h4>
+										<p class="skill-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates delectus provident eveniet, nisi illum sed! Animi delectus, pariatur praesentium, eum quo tempora tempore mollitia deleniti quis error saepe numquam est!</p>
+									</div>
+									<div class="skill-card__icon">
+										<img class="image" src="./images/skill_icon/nodejs-icon.png" alt=""/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="experience" class="experience section-padding__80">
+				<img src="images/parallax_graphic/cir-purple-lg.svg" class="graphic_007 u-sm-hidden" data-stellar-ratio="1.5" alt="">
+				<img src="images/parallax_graphic/dot-grey.svg" class="graphic_008" data-stellar-ratio="1.5" alt="">
+				<img src="images/parallax_graphic/cir-pink-sm.svg" class="graphic_009" data-stellar-ratio="1.5" alt="">
+				<img src="images/parallax_graphic/dot-blue.svg" class="graphic_010" data-stellar-ratio="1.5" alt="">
+				<div class="container">
+					<h2 class="subtitle u-text-center color-white wow bounceInUp">EXPERIENCE</h2>
+					<div class="timeline-group">
+						<div class="timeline"></div>
+						<div class="timeline-cards">
+							<div class="timeline-card-row">
+								<div class="timeline-card wow bounceInUp">
+									<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus itaque quasi obcaecati sapiente omnis tempora quisquam ex repudiandae excepturi non!</p>
+								</div>
+							</div>
+							<div class="timeline-card-row">
+								<div class="timeline-card wow bounceInUp">
+									<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus itaque quasi obcaecati sapiente omnis tempora quisquam ex repudiandae excepturi non!</p>
+								</div>
+							</div>
+							<div class="timeline-card-row">
+								<div class="timeline-card wow bounceInUp">
+									<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus itaque quasi obcaecati sapiente omnis tempora quisquam ex repudiandae excepturi non!</p>
+								</div>
+							</div>
+							<div class="timeline-card-row">
+								<div class="timeline-card wow bounceInUp">
+									<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus itaque quasi obcaecati sapiente omnis tempora quisquam ex repudiandae excepturi non!</p>
+								</div>
+							</div>
+							<div class="timeline-card-row">
+								<div class="timeline-card wow bounceInUp">
+									<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus itaque quasi obcaecati sapiente omnis tempora quisquam ex repudiandae excepturi non!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="myWork" class="myWork bg-color-white section-padding__80 tilt-bg__top tilt-bg__bottom">
+				<img src="images/parallax_graphic/cir-pink-lg.svg" class="graphic_011" data-stellar-ratio="1.5" alt="">
+				<img src="images/parallax_graphic/dot-grey.svg" class="graphic_012" data-stellar-ratio="1.5" alt="">
+				<div class="container">
+					<h2 class="subtitle u-text-center wow bounceInUp">SKILL</h2>
+					<div class="work-list">
+						<div class="work-item wow fadeInUp">
+							<div class="row">
+								<div class="col-sm-6 col-sm-push-5">
+									<div class="imageBox">
+										<a href="images/works/work001.jpg" data-fancybox="group">
+											<div class="imageBox__ratio imageBox__ratio__3-4">
+												<div class="image" style="background-image: url('images/works/thumbnail/work001_thumb.jpg')"></div>
+											</div>
+										</a>				
+									</div>
+								</div>
+								<div class="col-sm-4 col-sm-pull-5">
+									<div class="work-item-text work-item-text__right">
+										<h3 class="work-item-title work-item-title__right">1st Work Title</h3>
+										<p class="work-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maxime quam quidem tenetur, soluta perspiciatis. Totam nam reiciendis voluptatibus sequi fuga unde asperiores, omnis expedita iure est cumque, temporibus assumenda!</p>
+										<a href="#" class="text-btn text-btn-primary text-btn-lg">My Project</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="work-item wow fadeInUp">
+							<div class="row">
+								<div class="col-sm-6 col-sm-push-1">
+									<div class="imageBox">
+										<a href="images/works/work002.jpg" data-fancybox="group">
+											<div class="imageBox__ratio imageBox__ratio__3-4">
+												<div class="image" style="background-image: url('images/works/thumbnail/work002_thumb.jpg')"></div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-sm-4 col-sm-push-1">
+									<div class="work-item-text">
+										<h3 class="work-item-title work-item-title__left">2nd Work Title</h3>
+										<p class="work-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maxime quam quidem tenetur, soluta perspiciatis. Totam nam reiciendis voluptatibus sequi fuga unde asperiores, omnis expedita iure est cumque, temporibus assumenda!</p>
+										<a href="#" class="text-btn text-btn-primary text-btn-lg">My Project</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="work-item wow fadeInUp">
+							<div class="row">
+								<div class="col-sm-6 col-sm-push-6">
+									<div class="imageBox">
+										<a href="images/works/work003.jpg" data-fancybox="group">
+											<div class="imageBox__ratio imageBox__ratio__3-4">
+												<div class="image" style="background-image: url('images/works/thumbnail/work003_thumb.jpg')"></div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-sm-4 col-sm-pull-5">
+									<div class="work-item-text">
+										<h3 class="work-item-title">3rd Work Title</h3>
+										<p class="work-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maxime quam quidem tenetur, soluta perspiciatis. Totam nam reiciendis voluptatibus sequi fuga unde asperiores, omnis expedita iure est cumque, temporibus assumenda!</p>
+										<a href="#" class="text-btn text-btn-primary text-btn-lg">My Project</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="work-item wow fadeInUp">
+							<div class="row">
+								<div class="col-sm-6 col-sm-push-1">
+									<div class="imageBox">
+										<a href="images/works/work004.jpg" data-fancybox="group">
+											<div class="imageBox__ratio imageBox__ratio__3-4">
+												<div class="image" style="background-image: url('images/works/thumbnail/work004_thumb.jpg')"></div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-sm-4 col-sm-push-1">
+									<div class="work-item-text work-item-text__left">
+										<h3 class="work-item-title">4th Work Title</h3>
+										<p class="work-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maxime quam quidem tenetur, soluta perspiciatis. Totam nam reiciendis voluptatibus sequi fuga unde asperiores, omnis expedita iure est cumque, temporibus assumenda!</p>
+										<a href="#" class="text-btn text-btn-primary text-btn-lg">My Project</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="work-item wow fadeInUp">
+							<div class="row">
+								<div class="col-sm-6 col-sm-push-5">
+									<div class="imageBox">
+										<a href="images/works/work005.jpg" data-fancybox="group">
+											<div class="imageBox__ratio imageBox__ratio__3-4">
+												<div class="image" style="background-image: url('images/works/thumbnail/work005_thumb.jpg')"></div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-sm-4 col-sm-pull-5">
+									<div class="work-item-text work-item-text__right">
+										<h3 class="work-item-title work-item-title__right">5th Work Title</h3>
+										<p class="work-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maxime quam quidem tenetur, soluta perspiciatis. Totam nam reiciendis voluptatibus sequi fuga unde asperiores, omnis expedita iure est cumque, temporibus assumenda!</p>
+										<a href="#" class="text-btn text-btn-primary text-btn-lg">My Project</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="btn-group btn-group__center">
+						<a href="#" class="btn btn-secondary btn-md wow bounceIn">MORE</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="contact" class="contact section-padding__80">
+				<div class="container">
+					<h2 class="subtitle u-text-center color-white wow bounceInUp">CONTACT</h2>
+					<form action="" class="form wow fadeInUp">
+						<label for="">Name</label><input type="text" />
+						<div class="row">
+							<div class="col-sm-6">
+								<label for="">Phone</label><input type="tel" />
+							</div>
+							<div class="col-sm-6">
+								<label for="">Email</label><input type="email" />
+							</div>
+						</div>
+						<label for="">Message</label>
+						<textarea name="" id="" cols="30" rows="10"></textarea>
+						<div class="btn-group btn-group__center">
+							<input type="submit" value="SEND" class="btn btn-md btn-primary">
+						</div>
+					</form>
+					<div class="devide-text section-padding__80 wow fadeIn">or</div>
+					<div class="info">
+						<div class="info-email wow bounceInUp">
+							<a href="mailTo:linyujo@gmail.com">linyujo@gmail.com</a>
+						</div>
+						<div class="info-phone wow bounceInUp">
+							<a href="tel:0989568849">0989568849</a>
+						</div>
+						<div class="social-bar info__social-bar">
+							<a href="#" class="icon-btn wow bounceIn" data-wow-delay="0.3s"><i class="icon icon-facebook-official"></i></a>
+							<a href="#" class="icon-btn wow bounceIn" data-wow-delay="0.6s"><i class="icon icon-twitter"></i></a>
+							<a href="#" class="icon-btn wow bounceIn" data-wow-delay="0.9s"><i class="icon icon-behance"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End main -->
+
+		<!-- Start footer -->
+		<footer class="footer">
+			<div class="container">
+				<p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatibus voluptatem quasi dicta porro, repudiandae non iste dignissimos debitis quia similique modi temporibus laborum facilis, quod cum. Dolores, modi repellat.</p>
+				<p class="copyright">Copyright © 2017 UI/UX web design</p>
+			</div>
+		</footer>
+		<!-- End footer -->
+
+	</div>
+	<!-- JS -->
+	<script
+		src="https://code.jquery.com/jquery-2.0.2.min.js"
+		integrity="sha256-TZWGoHXwgqBP1AF4SZxHIBKzUdtMGk0hCQegiR99itk="
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="js/stellar.min.js"></script>
+	<script src="js/fancybox.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
